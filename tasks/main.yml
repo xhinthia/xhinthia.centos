@@ -1,0 +1,9 @@
+---
+# tasks file for centos
+- name: Centos
+  yum: name={{ item }} state=latest
+  with_items:
+   - vim
+   - git
+   - zsh
+...
